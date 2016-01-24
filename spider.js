@@ -191,13 +191,13 @@ function goNext(doc,mcatlog){
         ep.emit("classfy-end");
     }
     //2判断：是否有下一页的链接
-    var pnext = doc("#filter .fore1 .pagin").find(".next");
+    var pnext = doc("#J_bottomPage").find(".pn-next");
     if(pnext){
         //存在下一页信息
         //递归调用该函数
         var next = pnext.attr("href");
         var nextCat = {
-            link:next,
+            link:'http://list.jd.com' + next,
             catlog:mcatlog
         }
         if(utils.isObj(nextCat) && utils.isString(nextCat.link)){
