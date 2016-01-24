@@ -1,0 +1,16 @@
+{
+  "name": "jd_spider",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bufferhelper": "*",
+    "cheerio": "*",
+    "eventproxy": "0.2.3",
+    "iconv-lite": "*",
+    "mysql": "2.0.0-alpha9",
+    "request": "^2.67.0"
+  }
+}
